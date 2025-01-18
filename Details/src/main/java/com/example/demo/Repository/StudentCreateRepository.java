@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 @Repository
 public interface StudentCreateRepository  extends JpaRepository<StudentData, Integer>{
+    @SuppressWarnings("null")
     @Override 
     public <S extends StudentData> S save(S entity);
 }
