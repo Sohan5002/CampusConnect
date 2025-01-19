@@ -1,4 +1,4 @@
-package com.example.demo.DTO;
+package com.example.demo.dto;
 import java.time.LocalDate;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,9 +18,7 @@ public class StudentDTO {
     @Max(value = 1000, message = "Roll number must be less than or equal to 1000")
     private int roll;
 
-    @NotBlank(message = "Student ID cannot be blank")
-    @Size(max = 15, message = "Student ID cannot exceed 15 characters")
-    private String studentId;
+    
 
     @NotBlank(message = "First name cannot be blank")
     @Size(max = 50, message = "First name cannot exceed 50 characters")

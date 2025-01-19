@@ -1,4 +1,4 @@
-package com.example.demo.dto;
+package com.example.demo.Repository;
 
 import java.util.List;
 
@@ -9,6 +9,7 @@ import com.example.demo.model.StudentData;
 @Repository
 public interface StudentReadRepository extends JpaRepository<StudentData, Integer> {
     
+@SuppressWarnings("null")
 @Override
 List<StudentData> findAll();
 List<StudentData> findByStudentName(String studentName);
